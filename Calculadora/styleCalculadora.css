@@ -1,0 +1,151 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background: linear-gradient(#f79e3f, #3f87a6); */
+}
+
+body {
+    /* background: linear-gradient(rgba(131, 58, 180, 1), rgba(253, 29, 29, 1),rgba(252, 179, 69, 1)); */
+    /* background-color: rgb(39, 32, 32); */
+    background: -webkit-gradient(linear, left top, right top, from(#1f0016), to(#011d13)) no-repeat;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    padding-bottom: 5vh;
+    font-size: 7vh;
+    /* Primeiro passo: definir um degradê como fundo */
+    background-image: linear-gradient(to bottom, rgb(168, 0, 126), rgb(39, 129, 202), rgb(0, 255, 229));
+
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Alguns navegadores precisam do prefixo */
+
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+
+#calculator {
+    border: 1px dashed white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 60vw;
+}
+
+.result {
+    height: 10vh;
+    width: 59vw;
+    /* background-color: bisque; */
+    /* color: black; */
+    background: -webkit-gradient(linear, left top, right top, from(#ff3ac770), to(#01ffa66b)) no-repeat;
+    color: transparent;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0.5vw;
+    box-sizing: border-box;
+}
+
+#finalResult {
+    color: black;
+    font-size: 7vh;
+    font-weight: bolder;
+
+}
+
+#numAnterior {    
+    color: rgb(223, 209, 209);    
+    padding-right: 0.3vw;
+}
+
+#visorFeedback {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 7vh;
+    padding-left: 0.5vw;
+    color: black;
+    /* color: transparent; */
+}
+
+.input-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 60vw;
+}
+
+.numbers div button {
+    height: 14.5vh;
+    width: 14.5vw;
+    transition: 0.5s;
+}
+
+.zero-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.operations button {
+    height: 14.5vh;
+    width: 14.5vw;
+    background-color: rgb(214, 181, 137);
+    transition: 0.5s
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5vw;
+}
+
+#equal {
+    height: 9vh;
+    width: 59vw;
+    background-color: rgb(201, 152, 79);
+}
+
+.numbers button:hover i {
+    color: #FF00FF;
+    /* Cor do ícone quando o botão é hover */
+    
+}
+
+.numbers button:hover {
+    background-color: #35032850;
+    /* Cor de fundo do botão quando hover */
+}
+
+.operations button:hover i {
+    color: #7FFFD4
+        /* Cor do ícone quando o botão é hover */
+}
+
+.operations button:hover {
+    background-color: #023a2750;
+    /* Cor de fundo do botão quando hover */
+}
+
+#total-btn button:hover{
+    background-color: #a5610820;
+    /* Cor de fundo do botão quando hover */
+    color: bisque;
+}

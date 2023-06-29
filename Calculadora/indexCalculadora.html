@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styleCalculadora.css">
+   
+</head>
+<body>
+    <h1>Daniel's Calculator</h1>
+    
+    <div id="calculator">
+        <div class="result">
+            <div id="visorFeedback">
+                <p id="numArmazenado"></p>
+                <p id="visorOperation"></p>
+            </div>
+            <p id="finalResult"></p>            
+        </div>
+            <div class="input-data">
+                <div class="numbers">            
+                    <div class="one-three">
+                        <button id="one"><i class="fa-solid fa-1"></i></button>
+                        <button id="two"><i class="fa-solid fa-2"></i></button>
+                        <button id="three"><i class="fa-solid fa-3"></i></button>
+                    </div>
+                    <div class="four-six">
+                        <button id="four"><i class="fa-solid fa-4"></i></button>
+                        <button id="five"><i class="fa-solid fa-5"></i></button>
+                        <button id="six"><i class="fa-solid fa-6"></i></button>
+                    </div>
+                    <div class="six-nine">
+                        <button id="seven"><i class="fa-solid fa-7"></i></button>
+                        <button id="eight"><i class="fa-solid fa-8"></i></button>
+                        <button id="nine"><i class="fa-solid fa-9"></i></button>
+                    </div>
+                    <div class="zero-line">                
+                        <button id="period"><i class="fa-solid fa-circle"></i></button>
+                        <button id="zero"><i class="fa-solid fa-0"></i></button>
+                        <button id="erase"><i class="fa-solid fa-c"></i></button>
+                    </div>
+                </div>
+                <div class="operations">
+                    <button id="plus"><i class="fa-solid fa-plus"></i></button>
+                    <button id="minus"><i class="fa-solid fa-minus"></i></button>
+                    <button id="divide"><i class="fa-solid fa-divide"></i></button>
+                    <button id="x"><i class="fa-solid fa-x"></i></button>            
+                </div>
+            </div>
+        <div id="total-btn">
+            <button id="equal"><i class="fa-solid fa-equals"></i></button>
+        </div>        
+    </div>
+    
+
+    <script src="scriptCalculadora.js"></script>
+
+    <!-- linkando com icones do fontawsome -->
+    <script src="https://kit.fontawesome.com/81d73e8e4d.js" crossorigin="anonymous"></script>
+</body>
+</html>
