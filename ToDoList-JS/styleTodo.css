@@ -1,0 +1,128 @@
+:root {
+    --primary: #60a5fa;
+    --zinc900: #181818;
+    --zinc700: #3F3F46;
+    --zinc500: #71717A;
+    --zinc400: #A1A1AA;
+    --zinc50: #FAFAFA;
+    --error: #EF4444;
+}
+
+body {
+    background-color: var(--zinc900);
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*Margem automática para ambos os lados*/
+
+}
+
+h1 {
+    color: var(--zinc50);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.input-container {
+    position: relative;
+    /*referência para dependentes*/
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-container input {
+    background-color: var(--zinc700);
+    border: solid 2px transparent;
+    border-radius: 8px;
+    height: 40px;
+    width: 340px;
+    /* width: 100%; */
+    padding-right: 40px;
+    outline: none;
+    padding-left: 12px;
+    transition: all 0.3s cubic-bezier(0.08, 2.25, 1, -0.01);
+    color: var(--zinc500);
+}
+
+.input-container input:focus {
+    border: solid 2px var(--primary);
+    background-color: var(--zinc700);
+    color: var(--zinc50);
+}
+
+.btn-add {
+    background-color: var(--primary);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    position: absolute;
+    /*definição da localização, no caso alocado acima do input*/
+    color: var(--zinc50);
+    /* top: 0; */
+    right: 8px;
+}
+
+.btn-add i {
+    color: var(--zinc50);
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+    max-width: 570px;
+}
+
+.tasks li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--zinc700);
+    padding: 8px 0px;
+
+}
+
+.tasks li label {
+    cursor: pointer;
+}
+
+.tasks li input {
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.tasks li input:checked {
+    accent-color: red;
+}
+
+.tasks li span {
+    font-size: 16px;
+    color: var(--zinc50);
+    transition: 0.3s cubic-bezier(0.08, 2.25, 1, -0.01);
+}
+
+.tasks li input:checked~span {
+    text-decoration: line-through;
+    color: var(--zinc700);
+}
+
+.tasks li span.checked {
+    text-decoration: line-through;
+    color: var(--zinc700);
+}
+
+.tasks li i {
+    cursor: pointer;
+    color: var(--zinc400);
+}

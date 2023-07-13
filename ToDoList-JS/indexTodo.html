@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleTodo.css">
+    <!-- Javascript -->
+    <script src="scriptTodo.js" defer></script>
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Passo a passo 
+        - Tipografia (baixar a fonte no projeto para evitar dependência do Google)
+        - Definir grid (tamanho máximo do site)
+        - Importar ícones
+        - 
+    -->
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <div class="input-container">
+            <input type="text" id="input-add">
+            <div class="btn-add">
+                <i class='bx bx-plus'></i>
+            </div>
+        </div>
+        <ul class="tasks">
+            <li>
+                <label for="php"> <!--Incorpora o checkbox-->
+                    <input type="checkbox" name="" id="php">
+                    <span>Este é um exemplo</span>
+                </label>
+                <i class='bx bxs-trash' onClick="deleteTask('${item.id}')" ></i>
+
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
